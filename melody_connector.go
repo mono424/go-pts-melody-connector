@@ -1,4 +1,4 @@
-package go_pts_melody_connector
+package ptsc
 
 import (
 	"github.com/mono424/go-pts"
