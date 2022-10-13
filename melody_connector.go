@@ -6,7 +6,7 @@ import (
 	"net/http"
 )
 
-func NewMelodyConnector(melodyInstance *melody.Melody, errorHandler pts.ErrorHandlerFunc) *pts.Connector {
+func NewConnector(melodyInstance *melody.Melody, errorHandler pts.ErrorHandlerFunc) *pts.Connector {
 	connector := pts.NewConnector(
 		func(writer http.ResponseWriter, request *http.Request, properties map[string]interface{}) error {
 			return melodyInstance.HandleRequestWithKeys(writer, request, properties)
