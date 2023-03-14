@@ -4,7 +4,7 @@ go 1.18
 
 require (
 	github.com/mono424/go-pts v0.0.4
-	github.com/olahol/melody v1.1.1
+	github.com/olahol/melody v1.1.3
 )
 
 require (
